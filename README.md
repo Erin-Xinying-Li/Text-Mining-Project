@@ -1,5 +1,5 @@
 # Text-Mining-Project
-codes of my final project for Text Mining Course
+REPORT of my final project for Text Mining Course
 ### Introduction 
 With the current downward of the beer industry, wine has become one of the alcoholic beverages that have passed to play a relevant role on the focus of beverages manufacturers and marketing companies. It is also known that millennials and generation z are very oriented in consuming high-quality products (and not necessarily branded) even though they cost more. 
 
