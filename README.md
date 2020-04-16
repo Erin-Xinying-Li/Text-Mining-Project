@@ -78,11 +78,10 @@ In addition, due to the nature of the review data, the descriptive words seem to
 As it was previously explained, our methodology consisted in using the three different feature extraction methods (2-gram, and 3-gram, and bag of words) to fit the test data using the three text classification methods (Naive Bayes, Support Vector Machine and Logit Classifier) 
 
 
+- Using review data (“description) to predict variety
 
-●	Using review data (“description) to predict variety
-
-	The following shows the results:
-	Naive Bayes:
+The following shows the results:
+Naive Bayes:
 2-gram TF-IDF: 73.7%; 3-gram TF-IDF: 69.9%; Bag of words: 77.2%
 Logit Regression:
 2-gram TF-IDF: 66.1%; 3-gram TF-IDF: 48.3%; Bag of words: 82.2%
@@ -92,9 +91,9 @@ The summarized table is shown in the appendix.
 
 From the above table, for each classifier, using bag of words method to extract features will help to get a more accurate result. Among the three classifiers, Naive Bayes gives the best precision rate. From all the methods we tried, the best accuracy rate is 82.2% using bag of words to extract features and using Logit regression to do classification.
 
-●	Using review data (“description”) to predict winery
+- Using review data (“description”) to predict winery
 
-	The following shows the results:
+The following shows the results:
 Naive Bayes:
 2-gram TF-IDF: 37.4%; 3-gram TF-IDF: 29.3%; Bag of words: 44.7%
 Logit Regression:
@@ -104,29 +103,28 @@ Supervised Vector Machins:
 The summarized table is shown in the appendix.
 
 From the above table, for each classifier, using bag of words method to extract features will help to get a more accurate result. Among three classifiers, Naive Bayes gives the best precision rate. From all the methods we tried, the best accuracy rate is 44.7% using bag of words to extract features and using Naive Bayes to do classification. 
-
-●	Using review data and price (normalize it as dummies) to predict winery 
+- Using review data and price (normalize it as dummies) to predict winery 
 
 Using the similar technique as above, but this time, we will predict winery by incorporating two different variable. We normalize the price as dummyvariables when building the model. Intersecting each feature extraction with each classification method provided the following results for the two proposed predictors
 
-Naive Bayes:
+ - Naive Bayes:
 2-gram TF-IDF: 34.5%; 3-gram TF-IDF: 29.6%; Bag of words: 48.1%
-Logit Regression:
+
+ - Logit Regression:
 2-gram TF-IDF: 25.1%; 3-gram TF-IDF: 21.8%; Bag of words: 43.7%
-Supervised Vector Machins:
+
+ - Supervised Vector Machins:
 2-gram TF-IDF: 24.2%; 3-gram TF-IDF: 21.4%; Bag of words: 42.1%
 The summurized table is shown in the appendix. 
 
 From the above table, for each classifier, using bag of words method to extract features will help to get a more accurate result. Among the three classifiers, Naive Bayes gives the best precision rate. From all the methods we tried, the best accuracy rate is 48.1% using bag of words to extract features and using Naive Bayes to do classification. Compared with the using only description to predict winery, include price as a dummy variable increase our precision a little bit, but not too much. The best accuracy is increased from 44.7% to 48.1%, which is improved by 7.6%
 
-●	Topic Modeling
+- Topic Modeling
 
 The result of topic modeling is shown below. Since the topic modeling is the unsupervised learning, human evaluation of the model is proper in this context. From the result, we can find that the model didn’t perform very well. The first topic seems to talk about aroma and the second topic seems to talk about the wine flavor. But overall, it seems to have some indistinguishable words. 
 
 Topic 0	flavor finish palate aroma fruit cherry note black wine nose
 Topic 1	wine fruit flavor acidity drink ripe tannin rich age oak
-
-
 
 
 
